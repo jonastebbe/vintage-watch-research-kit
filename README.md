@@ -4,6 +4,15 @@ A free, printable worksheet for recording what a vintage watch actually shows, s
 
 Published by [The Index](https://theindex.watch), a reference guide to vintage watches. This kit works with any reference source and can be used offline. It is not an authentication or valuation service.
 
+## Download the fillable packet
+
+- [A4 PDF](output/pdf/vintage-watch-research-a4.pdf?raw=true)
+- [US Letter PDF](output/pdf/vintage-watch-research-letter.pdf?raw=true)
+
+Each three-page packet contains an observation sheet, a reusable claim-and-evidence page, and a photo request checklist. Download the PDF to type into its 28 fields and checkboxes, or print it. Save a copy and reopen it to check that your PDF reader preserves your entries. The blank packet can be shared freely; keep completed records and full serial numbers private.
+
+Clubs and educators may distribute the blank packet under the MIT licence. No signup or purchase is needed. The Markdown templates below offer more detailed fields for longer research projects.
+
 ## Start with the watch
 
 1. Copy [the identification worksheet](identification-worksheet.md) for each watch.
@@ -41,3 +50,7 @@ This is a **fictional example**, not a record of a real watch:
 The original templates in this repository are available under the [MIT licence](LICENSE). You may adapt them for a collecting club, research notes or a watchmaker's intake workflow. Suggested attribution: “Vintage watch research kit — The Index”, with a link to this repository or [theindex.watch](https://theindex.watch).
 
 The licence covers this kit only. It does not license The Index's catalogue, photographs, linked articles or other third-party material. See [The Index's content reuse policy](https://theindex.watch/reuse-policy/v1).
+
+## Rebuild the PDFs
+
+Install Python and `reportlab`, then run `python3 build_printable.py`. Generated files are in `output/pdf/`. The generator and original worksheet text are included so you can adapt page sizes, labels and fields.
